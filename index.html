@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>▄▄▄█████▓ ██▀███   ▄▄▄        ██████     ██▓    ▄▄▄          ███▄    █  ██▓▓█████  ▄▄▄▄    ██▓    ▄▄▄      
+    <pre>
+        ▄▄▄█████▓ ██▀███   ▄▄▄        ██████     ██▓    ▄▄▄          ███▄    █  ██▓▓█████  ▄▄▄▄    ██▓    ▄▄▄      
         ▓  ██▒ ▓▒▓██ ▒ ██▒▒████▄    ▒██    ▒    ▓██▒   ▒████▄        ██ ▀█   █ ▓██▒▓█   ▀ ▓█████▄ ▓██▒   ▒████▄    
         ▒ ▓██░ ▒░▓██ ░▄█ ▒▒██  ▀█▄  ░ ▓██▄      ▒██░   ▒██  ▀█▄     ▓██  ▀█ ██▒▒██▒▒███   ▒██▒ ▄██▒██░   ▒██  ▀█▄  
         ░ ▓██▓ ░ ▒██▀▀█▄  ░██▄▄▄▄██   ▒   ██▒   ▒██░   ░██▄▄▄▄██    ▓██▒  ▐▌██▒░██░▒▓█  ▄ ▒██░█▀  ▒██░   ░██▄▄▄▄██ 
@@ -12,7 +13,8 @@
             ░      ░▒ ░ ▒░  ▒   ▒▒ ░░ ░▒  ░ ░   ░ ░ ▒  ░ ▒   ▒▒ ░   ░ ░░   ░ ▒░ ▒ ░ ░ ░  ░▒░▒   ░ ░ ░ ▒  ░ ▒   ▒▒ ░
           ░        ░░   ░   ░   ▒   ░  ░  ░       ░ ░    ░   ▒         ░   ░ ░  ▒ ░   ░    ░    ░   ░ ░    ░   ▒   
                     ░           ░  ░      ░         ░  ░     ░  ░            ░  ░     ░  ░ ░          ░  ░     ░  ░
-                                                                                                ░                  </title>
+                                                                                                ░                                
+                                                                                    </pre>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -29,10 +31,45 @@
             font-size: 16px;
             cursor: pointer;
         }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        a {
+            display: block;
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    
+    <img src="Niebla.png" alt="Niebla">
+
+<p>Te encuentras en una pequeña ciudad rodeada por densa niebla. Despiertas en tu habitación sin recordar cómo llegaste allí. Afuera, el ambiente es extrañamente silencioso. Decides salir a la calle y descubrir qué está sucediendo.</p>
+
+<p>Después de explorar la ciudad, te encuentras con una figura misteriosa. Esta persona parece tan perdida como tú y también busca respuestas...</p>
+
+<a href="#" onclick="unirseFiguraMisteriosa()">Unirte a la Figura Misteriosa</a>
+<a href="#" onclick="ignorarFiguraMisteriosa()">Ignorar a la Figura Misteriosa</a>
+
+<script>
+    function unirseFiguraMisteriosa() {
+        document.write("<p>A pesar de las dudas, decides unirte a la figura misteriosa en su búsqueda de respuestas...</p>");
+        document.write("<p>A medida que avanzan juntos, encuentran evidencias del experimento fallido...</p>");
+        document.write("<a href='#' onclick='confrontarFiguraMisteriosa()'>Confrontar a la Figura Misteriosa</a>");
+        document.write("<a href='#' onclick='seguirJuntos()'>Continuar Juntos Sin Confrontar</a>");
+    }
+
+</script>
 </body>
 </html>
 
