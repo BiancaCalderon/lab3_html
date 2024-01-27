@@ -25,20 +25,7 @@
             border: 1px solid #ccc;
             border-radius: 10px;
         }
-        button {
-            padding: 10px;
-            margin: 10px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        a {
+        a.button {
             display: block;
             padding: 10px;
             margin: 10px;
@@ -49,6 +36,14 @@
             border-radius: 5px;
             text-align: center;
         }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        
     </style>
 </head>
 <body>
@@ -58,16 +53,26 @@
 
 <p>Después de explorar la ciudad, te encuentras con una figura misteriosa. Esta persona parece tan perdida como tú y también busca respuestas...</p>
 
-<a href="#" onclick="unirseFiguraMisteriosa()">Unirte a la Figura Misteriosa</a>
-<a href="#" onclick="ignorarFiguraMisteriosa()">Ignorar a la Figura Misteriosa</a>
+<a href="#" class="button" onclick="unirseFiguraMisteriosa()">Unirte a la Figura Misteriosa</a>
+<a href="#" class="button" onclick="ignorarFiguraMisteriosa()">Ignorar a la Figura Misteriosa</a>
 
 <script>
     function unirseFiguraMisteriosa() {
-        document.write("<p>A pesar de las dudas, decides unirte a la figura misteriosa en su búsqueda de respuestas...</p>");
-        document.write("<p>A medida que avanzan juntos, encuentran evidencias del experimento fallido...</p>");
-        document.write("<a href='#' onclick='confrontarFiguraMisteriosa()'>Confrontar a la Figura Misteriosa</a>");
-        document.write("<a href='#' onclick='seguirJuntos()'>Continuar Juntos Sin Confrontar</a>");
-    }
+            document.write("<p>A pesar de las dudas, decides unirte a la figura misteriosa en búsqueda de respuestas...</p>");
+            document.write("<a href='#' class='button' onclick='confrontarFiguraMisteriosa()'>Confrontar a la Figura Misteriosa</a>");
+            document.write("<a href='#' class='button' onclick='seguirJuntos()'>Continuar Juntos Sin Confrontar</a>");
+        }
+        function ignorarFiguraMisteriosa() {
+            document.write("<img src='lab.png' alt='Laboratorio Abandonado'>");
+            document.write("<p>Decides ignorar a la figura misteriosa y continuar tu investigación por separado...</p>");
+            document.write("<p>Mientras exploras, descubres un laboratorio abandonado con signos del experimento...</p>");
+            document.write("<a href='#' class='button' onclick='detenerExperimento()'>Investigar y Detener el Experimento</a>");
+            document.write("<a href='#' class='button' onclick='seguirExplorando()'>Continuar Explorando</a>");
+        }
+
+        
+
+    
 
 </script>
 </body>
