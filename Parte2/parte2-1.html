@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        a.button {
+            display: block;
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="C:\Users\bianc\OneDrive\Escritorio\HTML\lab3_html\Parte2\figura.png" alt="Laboratorio">
+
+    <p>Decides unirte a la figura misteriosa en búsqueda de respuestas. Juntos, exploran la ciudad envuelta en niebla y encuentran pistas que sugieren un experimento fallido para regular la población. Él te revela que el formó parte del experimento pero no recuerda que sucedió</p>
+    <p>Esto te causa una sensación inquiteante no sabes si debes de confrontarlo o seguir trabajando a su lado</p>
+
+    <a href="#" class="button" onclick="confrontarFiguraMisteriosa()">Confrontar a la Figura Misteriosa</a>
+    <a href="#" class="button" onclick="seguirJuntos()">Continuar Juntos Sin Confrontar</a>
+
+    <script>
+        function confrontarFiguraMisteriosa() {
+            document.location.href = "../Parte3/parte3-1.html";
+        }
+
+        function seguirJuntos() {
+            document.location.href = "../Parte3/parte3-2.html";
+        }
+    </script>
+</body>
+</html>
